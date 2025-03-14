@@ -51,12 +51,124 @@ public class AtividadeEstruturaDeDecisão {
 
         media =(not1 + not2)/2.0;
 
-        if (media>=10){
+        if (media==10){
             System.out.println("Aprovado com Distinção");
         } else if (media>=7) {
             System.out.println("Aprovado");
         } else {
             System.out.println("Reprovado");
         }
+              */  /* Questão 4:
+        double sal, reaj, salf;
+
+        System.out.println("Informe seu salário");
+        sal = scr.nextDouble();
+
+        if (sal <= 280){
+            reaj = (sal*20)/100;
+            salf = sal+reaj;
+            System.out.println("O salário antes do reajuste é: " +sal);
+            System.out.println("O percentual aplicado foi: 20%");
+            System.out.println("O valor do aumento foi de: " +reaj);
+            System.out.println("O novo salário é: " + salf);
+        } else if ((sal >280) && (sal<=700)) {
+            reaj = (sal*15)/100;
+            salf = sal+reaj;
+            System.out.println("O salário antes do reajuste é: " +sal);
+            System.out.println("O percentual aplicado foi: 15%");
+            System.out.println("O valor do aumento foi de: " +reaj);
+            System.out.println("O novo salário é: " + salf);
+        } else if ((sal>700) && (sal<= 1500)) {
+            reaj = (sal*10)/100;
+            salf = sal+reaj;
+            System.out.println("O salário antes do reajuste é: " +sal);
+            System.out.println("O percentual aplicado foi: 10%");
+            System.out.println("O valor do aumento foi de: " +reaj);
+            System.out.println("O novo salário é: " + salf);
+        }else {
+            reaj = (sal*5)/100;
+            salf = sal+reaj;
+            System.out.println("O salário antes do reajuste é: " +sal);
+            System.out.println("O percentual aplicado foi: 5%");
+            System.out.println("O valor do aumento foi de: " +reaj);
+            System.out.println("O novo salário é: " + salf);
+        }
+
+        *//* Questão 5:
+        int dia;
+
+        System.out.println("Informe um número");
+        dia = scr.nextInt();
+
+        switch (dia){
+            case 1:
+                System.out.println("Hoje é domingo!");
+            break;
+            case 2:
+                System.out.println("Hoje é segunda!");
+                break;
+            case 3:
+                System.out.println("Hoje é terça!");
+                break;
+            case 4:
+                System.out.println("Hoje é quarta!");
+                break;
+            case 5:
+                System.out.println("Hoje é quinta!");
+                break;
+            case 6:
+                System.out.println("Hoje é sexta!");
+                break;
+            case 7:
+                System.out.println("Hoje é sabado!");
+                break;
+            default:
+                System.out.println("Valor inválido");
+                break;
+        }
+
+        *//* Questão 6:
+        // Variavel
+        double imp, salb, salliq, vH, qH, inss;
+        //Pedir resultado
+        System.out.print("Informe quantas horas trabalhou no mês: ");
+        qH = scr.nextDouble();
+        System.out.print("Informe valor da hora: ");
+        vH = scr.nextDouble();
+
+        salb = vH*qH;
+        if (salb <= 900) {
+            inss = (10*salb)/100;
+            salliq = salb - inss;
+            System.out.println("Seu salário bruto é de "+ salb);
+            System.out.println("Seu salário liquido é de "+ salliq);
+            System.out.println("Desconto de INSS: "+ inss);
+            System.out.println("Você está isento do IR");
+        } else if ((salb>900) && (salb <=1500)) {
+            inss = (10*salb)/100;
+            imp = (5*salb)/100;
+            salliq = (salb - inss) - imp;
+            System.out.println("Seu salário bruto é de "+ salb);
+            System.out.println("Seu salário liquido é de "+ salliq);
+            System.out.println("Desconto de INSS: "+ inss);
+            System.out.println("Desconto do Imposto de Renda: " +imp);
+        } else if ((salb>1500) && (salb <=2500)) {
+            inss = (10*salb)/100;
+            imp = (10*salb)/100;
+            salliq = (salb - inss) - imp;
+            System.out.println("Seu salário bruto é de "+ salb);
+            System.out.println("Seu salário liquido é de "+ salliq);
+            System.out.println("Desconto de INSS: "+ inss);
+            System.out.println("Desconto do Imposto de Renda: " +imp);
+        } else {
+            inss = (10*salb)/100;
+            imp = (20*salb)/100;
+            salliq = (salb - inss) - imp;
+            System.out.println("Seu salário bruto é de "+ salb);
+            System.out.println("Seu salário liquido é de "+ salliq);
+            System.out.println("Desconto de INSS: "+ inss);
+            System.out.println("Desconto do Imposto de Renda: " +imp);
+        }
+        
     */}
 }
