@@ -120,7 +120,7 @@ public class AtividadeEstruturaDeDecisão {
                 System.out.println("Hoje é sexta!");
                 break;
             case 7:
-                System.out.println("Hoje é sabado!");
+                System.out.println("Hoje é sábado!");
                 break;
             default:
                 System.out.println("Valor inválido");
@@ -169,6 +169,77 @@ public class AtividadeEstruturaDeDecisão {
             System.out.println("Desconto de INSS: "+ inss);
             System.out.println("Desconto do Imposto de Renda: " +imp);
         }
-        
+
+        */ /*Questão 7:
+        char tipo;
+        double valp, litv, valf, desc;
+
+        System.out.println("Informe o tipo de combustível usado: A- álcool ou G- gasolina");
+        tipo = scr.next().charAt(0);
+        System.out.println("Informe quantos litros de combustível foram comprados");
+        litv = scr.nextDouble();
+
+        if (tipo == 'a' && (litv <= 20) || tipo == 'A' && (litv <= 20)){
+            valp = (litv * 4.19);
+            desc = valp * (litv* 3/100);
+            valf = valp - desc;
+            System.out.printf("O valor a ser pago é de %.2f reais" , valf );
+        } else if (tipo == 'a' && (litv > 20) || tipo == 'A' && (litv > 20)) {
+            valp = (litv * 4.19);
+            desc = valp * (litv* 5/100);
+            valf = valp - desc;
+            System.out.printf("O valor a ser pago é de %.2f reais" , valf);
+        } else if (tipo == 'g' && (litv <= 20) || tipo == 'G' && (litv <= 20)) {
+            valp = (litv * 5.50);
+            desc = valp * (litv* 4/100);
+            valf = valp - desc;
+            System.out.printf("O valor a ser pago é de %.2f reais" , valf);
+        }else if (tipo == 'g' && (litv > 20) || tipo == 'G' && (litv > 20)) {
+            valp = (litv * 5.50);
+            desc = valp * (litv* 6/100);
+            valf = valp - desc;
+            System.out.printf("O valor a ser pago é de %.2f reais" , valf);
+        } else {
+            System.out.println("Insira uma opção válida (A ou G)");
+        }
+
+                */ /* Questão 8:
+        char resp;
+        int i=0;
+
+        System.out.println("Telefonou para a vítima? (S)sim ou (N)não");
+        resp = scr.next().charAt(0);
+        if (resp == 's' || resp == 'S'){
+           i++;
+        }
+        System.out.println("Esteve no local do crime? (S)sim ou (N)não");
+        resp = scr.next().charAt(0);
+        if (resp == 's' || resp == 'S'){
+            i++;
+        }
+        System.out.println("Mora perto da vítima? (S)sim ou (N)não");
+        resp = scr.next().charAt(0);
+        if (resp == 's' || resp == 'S'){
+            i++;
+        }
+        System.out.println("Devia para a vítima? (S)sim ou (N)não");
+        resp = scr.next().charAt(0);
+        if (resp == 's' || resp == 'S'){
+            i++;
+        }
+        System.out.println("Já trabalhou com a vítima? (S)sim ou (N)não");
+        resp = scr.next().charAt(0);
+        if (resp == 's' || resp == 'S'){
+            i++;
+        }
+        if (i==2){
+            System.out.println("A pessoa é Suspeita");
+        } else if (i>2 && i<=4) {
+            System.out.println("A pessoa é cúmplice");
+        }else if (i>4){
+            System.out.println("A pessoa é assassina");
+        }else {
+            System.out.println("A pessoa é inocente");
+        }
     */}
 }
